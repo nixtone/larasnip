@@ -1,0 +1,170 @@
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+#wrapper {
+	flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+}
+.wide {
+	width: 100%;
+}
+.container {
+	box-sizing: border-box;
+	margin:0 auto;
+	max-width: 820px; /* Задать ширину блоков */
+	min-width: 320px;
+}
+
+/* Атомарные классы */
+
+body {
+	background: #f6f5f1;
+}
+.row {
+	width: 100%;
+	padding: 7px;
+	box-sizing: border-box;
+}
+td {
+	padding: 5px;
+}
+.btn {
+	background: #525252;
+	padding: 4px 10px 6px;
+	text-decoration: none;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	border: 0;
+	cursor: pointer;
+	font-family: Verdana;
+	font-size: 0.8em;
+}
+.btn:hover {
+	background: #969696;
+}
+.date_created {
+	background: #da3517;
+	display: inline-block;
+	color: #fff;
+	font-size: 0.9em;
+	padding: 2px 5px;
+	margin-bottom: 3px;
+}
+
+/* Основное */
+
+header {
+	background: #1a1a1a;
+	padding: 7px 15px 10px;
+	margin-top: 10px;
+}
+nav {
+	justify-content: space-between;
+	display: flex;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #d87664;
+}
+
+#breadcrumbs {
+	margin: 15px 0;
+}
+#breadcrumbs .crumb {
+	color: #e84023;
+	text-decoration: none;
+}
+#breadcrumbs .crumb:hover {
+	text-decoration: underline;
+}
+
+#post_add table {
+	width: 500px;
+}
+
+#post_list .inner {
+	margin-top: 15px;
+}
+#post_list .item {
+	margin-bottom: 16px;
+	background: #fff;
+	padding: 10px 15px;
+}
+#post_list .title {
+	font-size: 1.2em;
+	display: block;
+	margin-bottom: 5px;
+}
+#post_list .more {
+	color: #da3517;
+}
+
+#post_item .sort {
+	display: flex;
+	align-items: center;
+	margin-bottom: 6px;
+	background: #fff;
+	padding: 5px 7px;
+}
+#post_item .category {
+	color: #d8371a;
+	margin-right: 10px;
+}
+#post_item .date_created {
+	margin: 0 10px 0 0;
+}
+#post_item .tags {
+	display: flex;
+}
+#post_item .tag {
+	background: #dadada;
+	padding: 2px 5px 4px;
+	margin-right: 5px;
+}
+#post_item .text {
+	margin-bottom: 15px;
+	line-height: 23px;
+}
+#post_item .manage {
+	display: flex;
+}
+#post_item .manage .edit.btn {
+	margin-right: 10px;
+}
+
+footer .container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 1px solid #000;
+	text-align: center;
+}
+
+/* Адаптив */
+
+@media all and (min-width: 851px) {
+	.nob {
+		display: none;
+	}
+	
+}
+@media all and (max-width: 850px) {
+	.container:not(.cpn) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.nom {
+		display: none;
+	}
+
+}
