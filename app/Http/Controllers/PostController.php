@@ -55,4 +55,34 @@ class PostController extends Controller
         // $post->delete();
         die('deleted');
     }
+
+    public function firstOrCreate() {
+        $post = Post::firstOrCreate([
+                'title' => 'test4', // если не будет найдено значение 'test4' в колонке 'title'
+            ],
+            [ // то будет создана следующая запись:
+                'title' => 'test4',
+                'content' => 'test3 content',
+                'image' => 'img3',
+                'likes' => 5,
+                'is_published' => 1,
+            ]
+        );
+        dd($post);
+    }
+
+    public function updateOrCreate() {
+        $post = Post::updateOrCreate([
+                'title' => 'test5', // если не будет найдено значение 'test5' в колонке 'title'
+            ],
+            [ // то будет создана следующая запись, а если найдется, то поля обновятся на:
+            'title' => 'test5',
+            'content' => 'test3 content retest',
+            'image' => 'img3',
+            'likes' => 5,
+            'is_published' => 1,
+        ]);
+        dd($post);
+    }
+
 }
