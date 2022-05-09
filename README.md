@@ -2,7 +2,8 @@
 
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
-Стоп: [9. Модель. Метод добавления данных в базу(create)](https://www.youtube.com/watch?v=_FZu6KGX4XM&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=10)
+Стоп: [10. Модель. Методы обновления данных(update)](https://www.youtube.com/watch?v=jjfbD58s6kA&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=11)
+- В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()  
 
 ## Lectoria
 
