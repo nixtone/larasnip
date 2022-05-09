@@ -48,4 +48,11 @@ class PostController extends Controller
         ]);
         dd('upd');
     }
+
+    public function delete() {
+        $post = Post::withTrashed()->find(2); // withTrashed будет искать также среди мягкоудаленных
+        $post->restore();
+        // $post->delete();
+        die('deleted');
+    }
 }
