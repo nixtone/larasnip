@@ -2,7 +2,7 @@
 
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
-Стоп: [8. Модель. Методы чтения данных 2 (read/retrieve)](https://www.youtube.com/watch?v=kQsGK5TNTuw&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=9)
+Стоп: [9. Модель. Метод добавления данных в базу(create)](https://www.youtube.com/watch?v=_FZu6KGX4XM&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=10)
 
 ## Lectoria
 

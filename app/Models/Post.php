@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
+    protected $table = 'posts';
+    protected $guarded = false; // или false или []
+    // protected $fillable = ['title', 'content']; // Более уточненный вариант вместо "protected $guarded = [];"
 }
