@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
+@section('title', $post->title)
 <div id="post_item">
 	<div class="sort">
 		<div class="date_created">{{ $post->created_at }}</div>

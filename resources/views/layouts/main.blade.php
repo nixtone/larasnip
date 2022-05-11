@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="favicon.png">
-<title>Larasnip / сборник сниппетов</title>
-<link rel="stylesheet" href="/static/custom.css">
+<link rel="icon" type="image/png" href="/favicon.png">
+<title>Larasnip / @yield('title')</title>
+<link rel="stylesheet" href="/public/static/custom.css">
 </head>
 <body>
 <div id="wrapper">
@@ -23,12 +23,12 @@
 			</nav>
 		</header>
 
-		<h1>Заголовок страницы</h1>
+		<h1>@yield('title')</h1>
 
 		<div id="breadcrumbs">
 			<a href="" class="crumb">Главная</a> »
 			<a href="" class="crumb">Посты</a> »
-			<span>Тестовая запись</span>
+			<span>@yield('title')</span>
 		</div>
 
 		@yield('content')

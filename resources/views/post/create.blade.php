@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
+@section('title', 'Создать новый пост')
 <div id="post_add">
 	<form action="{{ route('post.store') }}" method="post">
         @csrf

@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
+@section('title', 'Список постов')
 <div id="post_list">
 	<a href="{{ route('post.create') }}" class="btn">Добавить пост</a>
 	<div class="inner">

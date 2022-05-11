@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
+@section('title', 'Редактировать пост: '.$post->title)
 <div id="post_add">
 	<form action="{{ route('post.update', $post->id) }}" method="post">
         @csrf

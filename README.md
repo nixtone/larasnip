@@ -3,16 +3,17 @@
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
 Стоп: [17. CRUD через интерфейс. Имена роутов, контроллеров по конвенции Laravel](https://www.youtube.com/watch?v=8VJ7tylaaFY&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=18)
-- В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()  
+- В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()
 - В 13 уроке, установить "[doctrine/dbal](https://packagist.org/packages/doctrine/dbal)" для редакции миграций, команды из урока:
 
-
-    php artisan make:migration add_column_description_to_posts_table  
-    (можно вместо '_to_posts_table' написать '--table="people"')
-    php artisan make:migration delete_column_description_to_posts_table  
-    php artisan make:migration edit_column_content_to_posts_table  
-    php artisan make:migration change_column_post_content_to_posts_table  
-    php artisan make:migration delete_table_from_posts
+```sh
+php artisan make:migration add_column_description_to_posts_table
+(можно вместо '_to_posts_table' написать '--table="people"')  
+php artisan make:migration delete_column_description_to_posts_table
+php artisan make:migration edit_column_content_to_posts_table
+php artisan make:migration change_column_post_content_to_posts_table
+php artisan make:migration delete_table_from_posts
+```
 
 - В 17 уроке, Действия, выполняемые [ресурсными контроллерами](https://laravel.su/docs/8.x/controllers#actions-handled-by-resource-controller)
 
@@ -22,11 +23,15 @@
 
 ## Расширения
 
-[Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar)  
+[Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar)
 
-    composer require barryvdh/laravel-debugbar --dev    
-
+```sh
+composer require barryvdh/laravel-debugbar --dev    
+```
 
 ## TODO
 
-- Test1
+- public_path или asset
+- своя 404
+- Хлебные крошки
+- Пагинация
