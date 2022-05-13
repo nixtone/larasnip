@@ -9,8 +9,7 @@ class Category extends Model
 {
     use HasFactory;
 
-    // 'posts' пишется по конвенции, тоесть у одной категории может быть много постов
     public function posts() {
-        return $this->hasMany(Post::class); // не удалось со 2 и 3 аргументами ", 'post_id', 'id'"
+        return $this->hasMany(Post::class);
     }
 }
