@@ -8,15 +8,30 @@
 		<table>
             <tr>
                 <td>Заголовок</td>
-                <td><input type="text" name="title" class="row"></td>
+                <td>
+                    @error('title')
+                        <div class="err">{{ $message }}</div>
+                    @enderror
+                    <input type="text" name="title" class="row" value="{{ old('title') }}">
+                </td>
             </tr>
             <tr>
                 <td>Текст</td>
-                <td><textarea name="content" id="" class="row"></textarea></td>
+                <td>
+                    @error('content')
+                        <div class="err">{{ $message }}</div>
+                    @enderror
+                    <textarea name="content" id="" class="row">{{ old('content') }}</textarea>
+                </td>
             </tr>
             <tr>
                 <td>Картинка</td>
-                <td><input type="text" name="image" class="row"></td>
+                <td>
+                    @error('image')
+                        <div class="err">{{ $message }}</div>
+                    @enderror
+                    <input type="text" name="image" class="row" value="{{ old('image') }}">
+                </td>
             </tr>
 
             <tr>
@@ -24,7 +39,9 @@
                 <td>
                     <select name="category_id" class="row">
                         @foreach($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->title }}</option>
+                        <option
+                            {{ old('category_id') == $category->id ? ' selected' : '' }}
+                            value="{{ $category->id }}">{{ $category->title }}</option>
                         @endforeach
                     </select>
                 </td>

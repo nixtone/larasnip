@@ -58,6 +58,10 @@ td {
 	padding: 2px 5px;
 	margin-bottom: 3px;
 }
+.err {
+    color: #ff0000;
+    margin-bottom: 5px;
+}
 
 /* Основное */
 
@@ -156,7 +160,7 @@ footer .container {
 	.nob {
 		display: none;
 	}
-	
+
 }
 @media all and (max-width: 850px) {
 	.container:not(.cpn) {
