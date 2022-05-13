@@ -14,4 +14,8 @@ class Post extends Model
     protected $table = 'posts';
     protected $guarded = false; // или false или []
     // protected $fillable = ['title', 'content']; // Более уточненный вариант вместо "protected $guarded = [];"
+
+    public function category() { // в ед.числе так как у каждого поста одна категория
+        return $this->belongsTo(Category::class, 'category_id', 'id');
+    }
 }
