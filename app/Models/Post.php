@@ -18,4 +18,8 @@ class Post extends Model
     public function category() { // в ед.числе так как у каждого поста одна категория
         return $this->belongsTo(Category::class, 'category_id', 'id');
     }
+
+    public function tags() {
+        return $this->belongsToMany(Tag::class, 'post_tags', 'post_id', 'tag_id');
+    }
 }
