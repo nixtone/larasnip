@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('post_tags', function (Blueprint $table) {
-            // бывает что предлагают удалить id и timestamps
+            // бывает что предлагают удалить id и timestamps, так как даты могут не оседать
             $table->id();
 
             $table->unsignedBigInteger('post_id');

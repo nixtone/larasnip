@@ -33,17 +33,21 @@
                 </td>
             </tr>
 
-            <!--
             <tr>
                 <td>Теги</td>
                 <td>
                     <select multiple="" name="tags[]" class="row">
-                        <option value="1">Сосисочки</option>
-                        <option value="2">Колбаски</option>
+                        @foreach($tags as $tag)
+                            <option
+                                @foreach($post->tags as $postTag)
+                                    {{ $tag->id == $postTag->id ? ' selected' : '' }}
+                                @endforeach
+                                value="{{ $tag->id }}">{{ $tag->title }}</option>
+                        @endforeach
                     </select>
                 </td>
             </tr>
-            -->
+
             <tr>
                 <td colspan="2"><input type="submit" value="Редактировать пост" class="btn"></td>
             </tr>
