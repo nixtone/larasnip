@@ -18,16 +18,19 @@
                 <td>Картинка</td>
                 <td><input type="text" name="image" class="row"></td>
             </tr>
-            <!--
+
             <tr>
                 <td>Категория</td>
                 <td>
                     <select name="category_id" class="row">
-                        <option value="1">Наркоманы</option>
-                        <option value="2">Алкоголики</option>
+                        @foreach($categories as $category)
+                        <option value="{{ $category->id }}">{{ $category->title }}</option>
+                        @endforeach
                     </select>
                 </td>
             </tr>
+
+            <!--
             <tr>
                 <td>Теги</td>
                 <td>

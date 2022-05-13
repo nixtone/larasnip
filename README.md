@@ -2,7 +2,7 @@
 
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
-Стоп: [19. Отношения многие ко многим](https://www.youtube.com/watch?v=j_f2HsndcCo&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=20)
+Стоп: [20. Вывод категорий в интерфейс](https://www.youtube.com/watch?v=AUDe_UDaUEs&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=21)
 - В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()
 - В 13 уроке, установить "[doctrine/dbal](https://packagist.org/packages/doctrine/dbal)" для редакции миграций, команды из урока:
 
