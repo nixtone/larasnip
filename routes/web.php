@@ -18,14 +18,15 @@ Route::get('/', function() {
     return view('layouts.main');
 });
 
-Route::get('/posts', [PostController::class, 'index'])->name('post.index');
-Route::get('/posts/create', [PostController::class, 'create'])->name('post.create');
-Route::post('/posts', [PostController::class, 'store'])->name('post.store');
-Route::get('/posts/{post}', [PostController::class, 'show'])->name('post.show');
-Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('post.edit');
-Route::patch('/posts/{post}', [PostController::class, 'update'])->name('post.update');
-Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('post.destroy');
-
+Route::name('post.')->group(function() {
+    Route::get('/posts', [PostController::class, 'index'])->name('index');
+    Route::get('/posts/create', [PostController::class, 'create'])->name('create');
+    Route::post('/posts', [PostController::class, 'store'])->name('store');
+    Route::get('/posts/{post}', [PostController::class, 'show'])->name('show');
+    Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('edit');
+    Route::patch('/posts/{post}', [PostController::class, 'update'])->name('update');
+    Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('destroy');
+});
 
 Route::get('/posts/update', [PostController::class, 'update']);
 Route::get('/posts/delete', [PostController::class, 'delete']);

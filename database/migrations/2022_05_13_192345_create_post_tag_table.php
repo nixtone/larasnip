@@ -17,6 +17,7 @@ return new class extends Migration
             /*
             Названия связываемых таблиц должно быть в ед.числе, в алфавитном порядке 'post' и 'tag'
             'php artisan make:migration create_post_tag_table --create'
+            '--create' говорит о создании именно такой таблицы
             */
             $table->id();
 

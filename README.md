@@ -36,3 +36,10 @@ composer require barryvdh/laravel-debugbar --dev
 - своя 404
 - Хлебные крошки
 - Пагинация
+- Провал [25 урока](https://www.youtube.com/watch?v=7siwtgIpfds&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=26) с invoke. 
+```sh
+Создание Controllers\Post
+Разбитие конроллера на "один класс - один метод invoke"
+В группировке маршрутов добавить namespace()
+В инвоках также скорректировать namespacы
+```
