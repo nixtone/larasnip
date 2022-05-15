@@ -2,7 +2,7 @@
 
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
-Стоп: [24. Отношения один ко многим и многие ко многим через конвенцию Laravel](https://www.youtube.com/watch?v=c0yuY_Ugacg&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=25)
+Стоп: [26. Класс Request в Laravel (вынос валидации в request)](https://www.youtube.com/watch?v=Es0K66she5Q&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=29)
 - В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()
 - В 13 уроке, установить "[doctrine/dbal](https://packagist.org/packages/doctrine/dbal)" для редакции миграций, команды из урока:
 
