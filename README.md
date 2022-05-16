@@ -17,6 +17,10 @@ php artisan make:migration delete_table_from_posts
 
 - В 17 уроке, Действия, выполняемые [ресурсными контроллерами](https://laravel.su/docs/8.x/controllers#actions-handled-by-resource-controller)
 - В 18 уроке, была проблема с очередностью выполнения миграций, решилось переименованием миграции категорий на более раннюю дату от миграции с постами.
+- В 25 уроке, переделка на "Один класс - один метод" на инвоках
+```sh
+php artisan make:controller IndexController --invokable
+```
 
 ## Lectoria
 
@@ -38,8 +42,7 @@ composer require barryvdh/laravel-debugbar --dev
 - Пагинация
 - Провал [25 урока](https://www.youtube.com/watch?v=7siwtgIpfds&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=26) с invoke. 
 ```sh
-Создание Controllers\Post
-Разбитие конроллера на "один класс - один метод invoke"
+Переместить контроллеры в Controllers\Post
 В группировке маршрутов добавить namespace()
 В инвоках также скорректировать namespacы
 ```
