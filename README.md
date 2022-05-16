@@ -2,7 +2,7 @@
 
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
-Стоп: [28. Классы Factory и Seed в Laravel](https://www.youtube.com/watch?v=3sx5pP5o5WA&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=29)
+Стоп: [29. Пагинация в Laravel](https://www.youtube.com/watch?v=m6b8OUjDXgs&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=30)
 - В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()
 - В 13 уроке, установить "[doctrine/dbal](https://packagist.org/packages/doctrine/dbal)" для редакции миграций, команды из урока:
 ```sh
