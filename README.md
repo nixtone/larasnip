@@ -2,10 +2,9 @@
 
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
-Стоп: [27. Класс Service в Laravel (не ларавел-сущность)](https://www.youtube.com/watch?v=GssEIvK3Is0&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=29)
+Стоп: [28. Классы Factory и Seed в Laravel](https://www.youtube.com/watch?v=3sx5pP5o5WA&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=29)
 - В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()
 - В 13 уроке, установить "[doctrine/dbal](https://packagist.org/packages/doctrine/dbal)" для редакции миграций, команды из урока:
-
 ```sh
 php artisan make:migration add_column_description_to_posts_table
 (можно вместо '_to_posts_table' написать '--table="people"')  
@@ -14,12 +13,17 @@ php artisan make:migration edit_column_content_to_posts_table
 php artisan make:migration change_column_post_content_to_posts_table
 php artisan make:migration delete_table_from_posts
 ```
-
 - В 17 уроке, Действия, выполняемые [ресурсными контроллерами](https://laravel.su/docs/8.x/controllers#actions-handled-by-resource-controller)
 - В 18 уроке, была проблема с очередностью выполнения миграций, решилось переименованием миграции категорий на более раннюю дату от миграции с постами.
 - В 25 уроке, переделка на "Один класс - один метод" на инвоках
 ```sh
 php artisan make:controller IndexController --invokable
+```
+- В 28 уроке, Сиды и фабрики, команды:
+```sh
+php artisan make:factory PostFactory -m Post // создание фабрики
+php artisan migrate --seed // запуск сида
+php artisan migrate:fresh --seed // запуск сида с очисткой базы
 ```
 
 ## Lectoria
