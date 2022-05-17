@@ -82,6 +82,24 @@ nav a:hover {
 	color: #d87664;
 }
 
+.pagination {
+    margin: 10px auto 10px;
+    padding: 0;
+    display: flex;
+}
+.pagination li {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+.pagination a {
+    color: #da3517;
+}
+.pagination li > * {
+    padding: 5px 8px;
+    display: block;
+}
+
 #breadcrumbs {
 	margin: 15px 0;
 }
