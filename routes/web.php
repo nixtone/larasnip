@@ -14,6 +14,9 @@ use App\Http\Controllers\DestroyController;
 // Админка
 use App\Http\Controllers\AdminController;
 
+// Авторизация/Регистрация
+use \App\Http\Controllers\HomeController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,22 +44,13 @@ Route::name('post.')->group(function() { // ->namespace('\Post')
     Route::delete('/posts/{post}', DestroyController::class)->name('destroy');
 });
 
-
-/*Route::prefix('/admin')->name('admin.')->group(function() {
-    Route::get('/post', IndexController::class)->name('post.index');
-});*/
-/*
-Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function() {
-    Route::group(['namespace' => 'Post'], function() {
-        Route::get('admin', AdminController::class)->name('admin.post.index');
-    });
-});*/
-
 Route::prefix('/admin')->name('admin.')->group(function() {
     Route::get('/post', AdminController::class)->name('post.index');
 });
 
-// Route::get('/admin', AdminController::class);
+Auth::routes();
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 
 /*
 Route::get('/posts/update', [PostController::class, 'update']);
@@ -64,3 +58,5 @@ Route::get('/posts/delete', [PostController::class, 'delete']);
 Route::get('/posts/first_or_create', [PostController::class, 'firstOrCreate']);
 Route::get('/posts/update_or_create', [PostController::class, 'updateOrCreate']);
 */
+
+

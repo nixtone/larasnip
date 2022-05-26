@@ -2,7 +2,7 @@
 
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
-Стоп: [31. Admin LTE в Laravel, устанавливаем админку](https://www.youtube.com/watch?v=w9kUQZDAWas&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=33)
+Стоп: [32. Авторизация Laravel](https://www.youtube.com/watch?v=Prau254LCqk&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=33)
 - В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()
 - В 13 уроке, установить "[doctrine/dbal](https://packagist.org/packages/doctrine/dbal)" для редакции миграций, команды из урока:
 ```sh
@@ -28,7 +28,12 @@ php artisan migrate:fresh --seed // запуск сида с очисткой б
 - В 31 уроке, [AdminLTE](https://adminlte.io/), [packagist](https://packagist.org/packages/almasaeed2010/adminlte)
 ```sh
 composer require almasaeed2010/adminlte
-``
+```
+- В 32 уроке, само накидает все шаблоны для авторизации и регистрации:
+```sh
+composer require laravel/ui
+php artisan ui:auth
+```
 
 ## Lectoria
 

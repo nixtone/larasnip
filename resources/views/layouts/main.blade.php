@@ -17,8 +17,8 @@
 				<a href="{{ route('post.index') }}">Посты</a>
 				<a href="">Текст</a>
 				<span>
-					<a href="/auth">Аутентификация</a> |
-					<a href="/reg">Регистрация</a>
+					<a href="/login">Аутентификация</a> |
+					<a href="/register">Регистрация</a>
 				</span>
 			</nav>
 		</header>
