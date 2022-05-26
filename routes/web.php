@@ -11,6 +11,9 @@ use App\Http\Controllers\EditController;
 use App\Http\Controllers\UpdateController;
 use App\Http\Controllers\DestroyController;
 
+// Админка
+use App\Http\Controllers\AdminController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,6 +40,23 @@ Route::name('post.')->group(function() { // ->namespace('\Post')
     Route::patch('/posts/{post}', UpdateController::class)->name('update');
     Route::delete('/posts/{post}', DestroyController::class)->name('destroy');
 });
+
+
+/*Route::prefix('/admin')->name('admin.')->group(function() {
+    Route::get('/post', IndexController::class)->name('post.index');
+});*/
+/*
+Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function() {
+    Route::group(['namespace' => 'Post'], function() {
+        Route::get('admin', AdminController::class)->name('admin.post.index');
+    });
+});*/
+
+Route::prefix('/admin')->name('admin.')->group(function() {
+    Route::get('/post', AdminController::class)->name('post.index');
+});
+
+// Route::get('/admin', AdminController::class);
 
 /*
 Route::get('/posts/update', [PostController::class, 'update']);

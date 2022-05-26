@@ -2,7 +2,7 @@
 
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
-Стоп: [30. Шаблон Filter, фильтрация данных в Laravel](https://www.youtube.com/watch?v=cL1eXKsnRJI&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=32)
+Стоп: [31. Admin LTE в Laravel, устанавливаем админку](https://www.youtube.com/watch?v=w9kUQZDAWas&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=33)
 - В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()
 - В 13 уроке, установить "[doctrine/dbal](https://packagist.org/packages/doctrine/dbal)" для редакции миграций, команды из урока:
 ```sh
@@ -25,6 +25,10 @@ php artisan make:factory PostFactory -m Post // создание фабрики
 php artisan migrate --seed // запуск сида
 php artisan migrate:fresh --seed // запуск сида с очисткой базы
 ```
+- В 31 уроке, [AdminLTE](https://adminlte.io/), [packagist](https://packagist.org/packages/almasaeed2010/adminlte)
+```sh
+composer require almasaeed2010/adminlte
+``
 
 ## Lectoria
 

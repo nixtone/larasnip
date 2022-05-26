@@ -11,9 +11,7 @@ class IndexController extends BaseController
 {
     public function __invoke(FilterRequest $request)
     {
-        $data = $request->validated();
-        $filter = app()->make(PostFilter::class, ['queryParams' => array_filter($data)]);
-        $posts = Post::filter($filter)->paginate(10); // без пагинации "->get();"
+
 
         /*
         $query = Post::query();
@@ -27,9 +25,12 @@ class IndexController extends BaseController
             $query->where('content', 'like', "%{$data['content']}%");
         }
         $posts = $query->get();
+        $posts = Post::paginate(10);
         */
 
-        //$posts = Post::paginate(10);
+        $data = $request->validated();
+        $filter = app()->make(PostFilter::class, ['queryParams' => array_filter($data)]);
+        $posts = Post::filter($filter)->paginate(10); // без пагинации "->get();"
         return view('post.index', compact('posts'));
     }
 }
