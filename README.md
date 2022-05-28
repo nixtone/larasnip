@@ -2,7 +2,7 @@
 
 [Плейлист](https://www.youtube.com/watch?v=BUiZDl3cokQ&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU)
 
-Стоп: [32. Авторизация Laravel](https://www.youtube.com/watch?v=Prau254LCqk&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=33)
+Стоп: [33. Класс Middleware в Laravel](https://www.youtube.com/watch?v=Og8AASC3HqA&list=PLd2_Os8Cj3t8pnG4ubQemoqnTwf0VFEtU&index=37)
 - В 9 уроке был показан трюк с guarded в модели, который пропускает поля в create()
 - В 13 уроке, установить "[doctrine/dbal](https://packagist.org/packages/doctrine/dbal)" для редакции миграций, команды из урока:
 ```sh
@@ -33,6 +33,11 @@ composer require almasaeed2010/adminlte
 ```sh
 composer require laravel/ui
 php artisan ui:auth
+```
+- В 33 уроке, создавался и регистрировался "посредник"
+```sh
+php artisan make:migration add_column_role_to_users_table
+php artisan make:middleware AdminPanelMiddleware
 ```
 
 ## Lectoria

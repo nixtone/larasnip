@@ -44,7 +44,7 @@ Route::name('post.')->group(function() { // ->namespace('\Post')
     Route::delete('/posts/{post}', DestroyController::class)->name('destroy');
 });
 
-Route::prefix('/admin')->name('admin.')->group(function() {
+Route::prefix('/admin')->name('admin.')->middleware('admin')->group(function() {
     Route::get('/post', AdminController::class)->name('post.index');
 });
 
