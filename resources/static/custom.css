@@ -1,0 +1,82 @@
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+#wrapper {
+	flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+}
+.wide {
+	width: 100%;
+}
+.container {
+	box-sizing: border-box;
+	margin:0 auto;
+	max-width: 800px; /* Задать ширину блоков */
+	min-width: 320px;
+}
+
+/* Атомарные классы */
+
+
+
+/* Основное */
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+nav {
+	display: flex;
+}
+header nav a {
+	color: #8b9b6e;
+	display: block;
+	margin-left: 15px;
+	text-decoration: none;
+	padding: 3px 7px 4px;
+	border-radius: 2px;
+}
+nav a:hover:not(.active) {
+	text-decoration: underline;
+}
+nav a.active {
+	color: #fff;
+	background: #8b9b6e;
+}
+
+footer .container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 1px solid #8b9b6e;
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* Адаптив */
+
+@media all and (min-width: 831px) {
+	.nob {
+		display: none;
+	}
+
+}
+@media all and (max-width: 830px) {
+	.container:not(.cpn) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.nom {
+		display: none;
+	}
+
+}
