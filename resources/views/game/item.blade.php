@@ -1,40 +1,64 @@
 @extends('layouts.main')
 
-@section('title', 'Игра')
+@section('title', 'Игра: '.$game->name)
 @section('content')
-    <div id="game">
-        <h2>Описание игры и все такое</h2>
-    </div>
-    <div id="team_game">
-        <!-- Доступно только для командира, команда уже выбрана -->
+
+    <div id="game_item">
         <table>
             <tr>
-                <td>Название игры</td>
-                <td><strong>Открытие сезона 2022</strong></td>
+                <th>Полигон</th>
+                <th>Координаты</th>
+                <th>Организатор</th>
+                <th>Начало</th>
+                <th>Конец</th>
+                <th>Заявка создана</th>
             </tr>
             <tr>
-                <td>Поручитель</td>
-                <td>
-                    <select name="" id="">
-                        <option value="">Сокол</option>
-                        <option value="">Мотострелки</option>
-                        <option value="">РГСпН Пластунский</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h3>Участники</h3>
-                    <label for="c1"><input type="checkbox" name="" id="c1">Кащей</label>
-                    <label for="c2"><input type="checkbox" name="" id="c2">Солдат</label>
-                    <label for="c3"><input type="checkbox" name="" id="c3">Вепрь</label>
-                    <label for="c4"><input type="checkbox" name="" id="c4">Техник</label>
-                    <label for="c5"><input type="checkbox" name="" id="c5">Оружейник</label>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" value="Создать заявку"></td>
+                <td>{{ $game->location_name }}</td>
+                <td><a href="https://yandex.ru/maps/?ll={{ $game->location_coordinates }}&z=12&l=map" target="_blank" rel="noopener">{{ $game->location_coordinates }}</a></td>
+
+                <td><a href="{{ route('team', $game->team_id) }}">{{ $team->name }}</a></td>
+                <td>{{ $game->date_start }}</td>
+                <td>{{ $game->date_end }}</td>
+                <td>{{ $game->created_at }}</td>
             </tr>
         </table>
+
+        <div class="script">{!! $game->description !!}</div>
+
+        <!--
+        1. Наименование Команды
+        2. Количество человек
+        3. Камуфляж
+        4. Игровой транспорт
+        5. Инфо о команде: Поручитель,БС,СК
+        6. Шеврон команды
+        7. Город базирования
+        -->
+
+        <?/*{{ $arPlayerRequest }} */?>
+
+        <table>
+            <tr>
+                <th colspan="5">Заявки на участие</th>
+            </tr>
+            <tr>
+                <th>Название</th>
+                <th>Количество человек</th>
+                <th>Камуфляж</th>
+                <th>Игровой транспорт</th>
+                <th>Статус</th>
+            </tr>
+            @foreach($arGameRequest as $gameRequest)
+            <tr>
+                <td><a href="{{ route('team', $gameRequest->team_id) }}">{{ $gameRequest->team_id }}</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            @endforeach
+        </table>
     </div>
+
 @endsection

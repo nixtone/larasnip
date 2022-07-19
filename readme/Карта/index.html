@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+.scheme {
+	height: 393px;
+	width: 738px;
+	margin: 0 auto;
+	position: relative;
+}
+.scheme svg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 393px;
+	width: 738px;
+}
+.scheme polygon {
+	fill: #FFDBA4;
+	cursor: pointer;
+}
+.scheme polygon:hover, #hover {
+	fill: #ffc70b;
+}
+</style>
+</head>
+<body>
+
+<div class="scheme">
+	<img src="map.png" alt="">
+	<svg>		
+		<polygon data-id="1" points="52,270 93,305 151,305 151,364 137,364 52,342 17,311"></polygon>
+		<polygon data-id="2" points="92,224 123,252 123,302 93,302 53,268"></polygon>
+		<polygon data-id="3" points="137,169 168,197 124,249 93,223"></polygon>
+		<polygon points="10,10 10,150 100,100" style="fill:lime;stroke:purple;stroke-width:1" />
+	</svg>
+</div>
+
+</body>
+</html>

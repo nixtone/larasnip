@@ -2,13 +2,31 @@
 
 @section('title', 'Игрок')
 @section('content')
-<div id="user">
-    <img src="" alt="" class="user_pic">
-    <div class="call">Позывной: Солдат</div>
-    <div class="team">В команде: <a href="">Сокол</a></div>
-    <div class="name">Имя: Николай</div>
-    <div class="phone">Телефон: 8 951 84 74 678</div>
-    <div class="vk">Вконтакте: <a href="">nixtone</a></div>
+
+<div id="player_item">
+
+    <table>
+        <tr>
+            <th>Позывной</th>
+            <th>Имя</th>
+            <th>Телефон</th>
+            <th>https://vk.com/</th>
+            <th>E-mail</th>
+            <th>Должность</th>
+            <th>Команда</th>
+        </tr>
+            <tr>
+                <td>{{ $player->name }}</td>
+                <td>{{ $player->real_name }}</td>
+                <td><a href="tel:{{ $player->phone }}">{{ $player->phone }}</a></td>
+                <td><a href="https://vk.com/{{ $player->socnet }}" target="_blank" rel="noopener">{{ $player->socnet }}</a></td>
+                <td>{{ $player->email }}</td>
+                <td>{{ $player->status }}</td>
+                <td><a href="{{ route('team', $player->team_id) }}">{{ $team->name }}</a></td>
+            </tr>
+    </table>
+
+    <?/**/?>
 
     <div class="battle_way">
         Боевой путь:

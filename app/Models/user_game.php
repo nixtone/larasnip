@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class user_game extends Model
 {
     use HasFactory;
+
+    // public function
 }

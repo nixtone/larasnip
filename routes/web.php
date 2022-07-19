@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PlayerController;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\GameController;
+use App\Http\Controllers\CamoController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,31 +19,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Игроки
-Route::prefix('/player')->group(function() {
-    Route::get('/', function() { return view('player.list'); });
-    Route::get('/new', function() { return view('player.new'); });
-    Route::get('/{player_name}', function() { return view('player.item'); });
+Route::prefix('/player')->controller(PlayerController::class)->group(function() {
+    Route::get('/', 'list');
+    Route::get('/new', 'new');
+    Route::get('/{player}', 'item')->name('player');
 });
 
 // Команды
-Route::prefix('/team')->group(function() {
-    Route::get('/', function() { return view('team.list'); });
-    Route::get('/new', function() { return view('team.new'); });
-    Route::get('/{team_name}', function() { return view('team.item'); });
+Route::prefix('/team')->controller(TeamController::class)->group(function() {
+    Route::get('/', 'list');
+    Route::get('/new', 'new');
+    Route::get('/{team}', 'item')->name('team');
 });
 
 // Игры
-Route::prefix('/game')->group(function() {
-    Route::get('/', function() { return view('game.list'); });
-    Route::get('/new', function() { return view('game.new'); });
-    Route::get('/{game_name}', function() { return view('game.item'); });
+Route::prefix('/game')->controller(GameController::class)->group(function() {
+    Route::get('/', 'list');
+    Route::get('/new', 'new');
+    Route::get('/{game}', 'item')->name('game');
 });
 
 // Камуфляжи
-Route::prefix('/camo')->group(function() {
-    Route::get('/', function() { return view('camo.list'); });
-    Route::get('/new', function() { return view('camo.new'); });
-    Route::get('/{camo_name}', function() { return view('camo.item'); });
+Route::prefix('/camo')->controller(CamoController::class)->group(function() {
+    Route::get('/', 'list');
+    Route::get('/new', 'new');
+    Route::get('/{camo}', 'item')->name('camo');
 });
 
 // Главная

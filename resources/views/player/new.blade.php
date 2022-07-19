@@ -2,7 +2,7 @@
 
 @section('title', 'Регистрация игрока')
 @section('content')
-<div id="user_reg" class="wide">
+<div id="player_new" class="wide">
     <form>
         <table>
             <tr>
