@@ -2,4 +2,14 @@
 
 [Плейлист](https://www.youtube.com/watch?v=UqlVcp21X7c&list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB)  
 
-[1. Подключаем bootstrap, auth и базу данных sqlite](https://www.youtube.com/watch?v=sdL_3z5gbjw&list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB&index=4)
+[2. Первоначальный план и создаем миграции](https://www.youtube.com/watch?v=KKFwLAklnzA&list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB&index=3)
+
+### Заметки  
+
+2. Создали миграции и модели:  
+
+> php artisan make:model Post -m  
+> php artisan make:model Category -m  
+> php artisan make:model Tag -m  
+> php artisan make:model PostTag -m  
+
