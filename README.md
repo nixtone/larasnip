@@ -2,7 +2,7 @@
 
 [Плейлист](https://www.youtube.com/watch?v=UqlVcp21X7c&list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB)  
 
-[3. Подгружаем фронт страницы блога. Список постов](https://www.youtube.com/watch?v=ShuXAn2FAxw&list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB&index=6)
+[5. Определяемся со стратегией и создаем задел для CRUD категорий](https://www.youtube.com/watch?v=Ibq8wmr0_Iw&list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB&index=7)
 
 ### Заметки  
 
