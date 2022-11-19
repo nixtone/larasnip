@@ -2,7 +2,7 @@
 
 [Плейлист](https://www.youtube.com/watch?v=UqlVcp21X7c&list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB)  
 
-[5. Определяемся со стратегией и создаем задел для CRUD категорий](https://www.youtube.com/watch?v=Ibq8wmr0_Iw&list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB&index=7)
+[6. Страница создания категории(форма создания)](https://www.youtube.com/watch?v=I9k8eFAsbCY&list=PLd2_Os8Cj3t8StX6GztbdMIUXmgPuingB&index=7)
 
 ### Заметки  
 
